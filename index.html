@@ -3,41 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин электроники "ТехноМир"</title>
+    <meta name="description" content="Интернет-магазин электроники ТехноМир">
+    <title>ТехноМир — магазин электроники</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>ТехноМир</h1>
-        <nav>
-            <a href="#">Главная</a>
-            <a href="#">Каталог</a>
-            <a href="#">Контакты</a>
-        </nav>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html" aria-label="ТехноМир, главная страница">
+                <img src="images/logo.svg" width="42" height="42" alt="">
+                <span>ТехноМир</span>
+            </a>
+            <nav class="main-navigation" aria-label="Основная навигация">
+                <a href="#catalog">Каталог</a>
+                <a href="#contacts">Контакты</a>
+                <a href="form.html">Регистрация</a>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="products">
-            <h2>Популярные товары</h2>
-            <div class="product-card">
-                <h3>Смартфон</h3>
-                <p>Мощный и удобный.</p>
-                <a href="#" class="btn">Купить</a>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <p class="eyebrow">Электроника для жизни и работы</p>
+                <h1 id="hero-title">Техника, которая помогает каждый день</h1>
+                <p class="hero-text">Выберите надёжные устройства для дома, учёбы и отдыха.</p>
+                <a class="button" href="#catalog">Смотреть товары <span aria-hidden="true">→</span></a>
             </div>
-            <div class="product-card">
-                <h3>Ноутбук</h3>
-                <p>Для работы и учёбы.</p>
-                <a href="#" class="btn">Купить</a>
-            </div>
-            <div class="product-card">
-                <h3>Наушники</h3>
-                <p>Чистый звук.</p>
-                <a href="#" class="btn">Купить</a>
+        </section>
+
+        <section class="catalog container" id="catalog" aria-labelledby="catalog-title">
+            <h2 id="catalog-title">Популярные товары</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <span class="product-badge">Хит</span>
+                    <figure>
+                        <img src="images/smartphone.jpg" width="1254" height="1254" alt="Смартфон в тёмном корпусе">
+                        <figcaption>JPEG — фотография товара</figcaption>
+                    </figure>
+                    <h3>Смартфон Nova X</h3>
+                    <p>Яркий экран, две камеры и аккумулятор на целый день.</p>
+                    <p class="price">34 990 ₽</p>
+                    <a class="button button-small" href="form.html">Купить <span aria-hidden="true">🛒</span></a>
+                </article>
+                <article class="product-card">
+                    <figure>
+                        <img src="images/headphones.png" width="1254" height="1254" alt="Беспроводные тёмно-синие наушники">
+                        <figcaption>PNG — изображение товара</figcaption>
+                    </figure>
+                    <h3>Наушники Sound Pro</h3>
+                    <p>Чистый звук, мягкие амбушюры и беспроводное подключение.</p>
+                    <p class="price">8 490 ₽</p>
+                    <a class="button button-small" href="form.html">Купить <span aria-hidden="true">🛒</span></a>
+                </article>
+                <article class="product-card">
+                    <figure>
+                        <img src="images/logo.svg" width="120" height="120" alt="Векторный логотип ТехноМира">
+                        <figcaption>SVG — масштабируемая иконка</figcaption>
+                    </figure>
+                    <h3>Подарочная карта</h3>
+                    <p>Практичный подарок: получатель сам выберет нужную технику.</p>
+                    <p class="price">от 1 000 ₽</p>
+                    <a class="button button-small" href="form.html">Оформить <span aria-hidden="true">🎁</span></a>
+                </article>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 ТехноМир</p>
+
+    <footer class="site-footer" id="contacts">
+        <div class="container footer-content">
+            <p>© 2026 ТехноМир</p>
+            <address>
+                <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                <a href="mailto:hello@technomir.example">hello@technomir.example</a>
+            </address>
+        </div>
     </footer>
 </body>
 </html>

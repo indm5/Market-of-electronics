@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — ТехноМир</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-page">
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html" aria-label="ТехноМир, главная страница">
+                <img src="images/logo.svg" width="42" height="42" alt="">
+                <span>ТехноМир</span>
+            </a>
+            <nav class="main-navigation" aria-label="Основная навигация">
+                <a href="index.html#catalog">Каталог</a>
+                <a href="index.html#contacts">Контакты</a>
+                <a href="form.html" aria-current="page">Регистрация</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="registration" aria-labelledby="registration-title">
+            <h1 id="registration-title">Регистрация покупателя</h1>
+            <p>Заполните форму, чтобы получать персональные предложения магазина.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Личная информация</legend>
+                    <div class="form-row">
+                        <label for="name">Имя</label>
+                        <input id="name" name="name" type="text" placeholder="Например, Анна" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="birth-date">Дата рождения</label>
+                        <input id="birth-date" name="birth-date" type="date" required>
+                    </div>
+                    <div class="form-row">
+                        <span class="field-title">Пол</span>
+                        <div class="choice-group">
+                            <input id="female" name="gender" type="radio" value="female" required>
+                            <label for="female">Женский</label>
+                            <input id="male" name="gender" type="radio" value="male">
+                            <label for="male">Мужской</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Пароль</label>
+                        <input id="password" name="password" type="password" placeholder="Не менее 8 символов" minlength="8" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактные данные</legend>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="anna@example.ru" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Телефон</label>
+                        <input id="phone" name="phone" type="tel" placeholder="+7 900 123-45-67" required>
+                    </div>
+                    <div class="form-row">
+                        <span class="field-title">Удобное время для связи</span>
+                        <div class="choice-group">
+                            <input id="morning" name="time" type="checkbox" value="morning">
+                            <label for="morning">Утро</label>
+                            <input id="day" name="time" type="checkbox" value="day">
+                            <label for="day">День</label>
+                            <input id="evening" name="time" type="checkbox" value="evening">
+                            <label for="evening">Вечер</label>
+                            <input id="night" name="time" type="checkbox" value="night">
+                            <label for="night">Ночь</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="button form-button" type="submit">Зарегистрироваться</button>
+            </form>
+            <h2>Примеры псевдоэлементов</h2>
+            <ol class="pseudo-list">
+                <li>Нечётный элемент списка</li>
+                <li>Чётный элемент списка</li>
+                <li>Нечётный элемент списка</li>
+                <li>Чётный элемент списка</li>
+            </ol>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 ТехноМир</p>
+            <address>
+                <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                <a href="mailto:hello@technomir.example">hello@technomir.example</a>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
